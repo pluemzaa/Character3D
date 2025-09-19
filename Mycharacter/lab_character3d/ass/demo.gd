@@ -7,6 +7,7 @@ func _ready() -> void:
 	$Walking2/AnimationPlayer.play("MeleeLib/HeavyRunning")
 	$Walking3/AnimationPlayer.play("MeleeLib/HeavyWalking")
 	$Walking4/AnimationPlayer.play("MeleeLib/root-Roll")
+	$Praying/AnimationPlayer.play("MeleeLib/Heavy1")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
