@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7sxdctknihcy"]
-
-[ext_resource type="PackedScene" uid="uid://dpsgomolgfy6e" path="res://ass/Walking.fbx" id="1_bdg8y"]
-
-[node name="Node3D" type="Node3D"]
-
-[node name="Walking" parent="." instance=ExtResource("1_bdg8y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.69347, 1.19209e-07, -0.606225)
