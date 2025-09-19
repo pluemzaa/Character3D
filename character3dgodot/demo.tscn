@@ -1,0 +1,39 @@
+[gd_scene load_steps=7 format=3 uid="uid://3wwd8rqyf2v6"]
+
+[ext_resource type="PackedScene" uid="uid://dnuy8vy4iqxmw" path="res://Necharacter3D.tscn" id="1_5hfv0"]
+[ext_resource type="Script" uid="uid://c57sbkauip4xf" path="res://demo.gd" id="1_6bw2v"]
+[ext_resource type="Texture2D" uid="uid://bjvoxu4op3hrj" path="res://Lamborginhi Aventador_diffuse.jpeg" id="2_m0rpm"]
+[ext_resource type="ArrayMesh" uid="uid://dkpthcqwxsbn3" path="res://Lamborghini_Aventador.obj" id="3_c6xj6"]
+[ext_resource type="PackedScene" uid="uid://0algh5tfhlgf" path="res://Tree.glb" id="4_c6xj6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6bw2v"]
+albedo_texture = ExtResource("2_m0rpm")
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_6bw2v")
+
+[node name="Praying" parent="." instance=ExtResource("1_5hfv0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1609, -0.482395, -0.886036)
+
+[node name="Praying2" parent="." instance=ExtResource("1_5hfv0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.71994, -0.482395, -0.886036)
+
+[node name="Praying3" parent="." instance=ExtResource("1_5hfv0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.50919, -0.482395, -0.886036)
+
+[node name="Praying4" parent="." instance=ExtResource("1_5hfv0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9319, -0.482395, -0.886036)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.20224, 13.1154)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.490585, -0.871394, 0, 0.871394, 0.490585, 0, 19.9385, 0)
+
+[node name="LamborghiniAventador" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0350583, 0, -0.0423782, 0, 0.055, 0, 0.0423782, 0, 0.0350583, 4.65313, 0, -17.6709)
+material_override = SubResource("StandardMaterial3D_6bw2v")
+mesh = ExtResource("3_c6xj6")
+
+[node name="Tree" parent="." instance=ExtResource("4_c6xj6")]
+transform = Transform3D(12, 0, 0, 0, 12, 0, 0, 0, 12, -7.27258, 15.2513, -35.5261)
