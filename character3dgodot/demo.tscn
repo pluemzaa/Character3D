@@ -28,7 +28,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9319, -0.482395, -0.886036
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.20224, 13.1154)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.621859, 0.783129, 0, -0.783129, -0.621859, 0, 19.9385, 0)
+transform = Transform3D(1, 0, 0, 0, -0.918778, 0.394776, 0, -0.394775, -0.918778, 0, 83.4161, 13.7914)
 
 [node name="LamborghiniAventador" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.0350583, 0, -0.0423782, 0, 0.055, 0, 0.0423782, 0, 0.0350583, 4.65313, 0, -17.6709)
